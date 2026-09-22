@@ -11,6 +11,10 @@
 <link rel="manifest" href="manifest.webmanifest">
 <title>Планировщик дня</title>
 <style>
+/* Fix: compact delete buttons on mobile */
+[data-del-act]{flex:0 0 42px !important;width:42px !important;min-width:42px;max-width:42px;height:42px;min-height:42px;padding:0 !important;display:flex;align-items:center;justify-content:center}
+[data-del-todo]{flex:0 0 42px !important;width:42px !important;min-width:42px;max-width:42px;height:42px;min-height:42px;padding:0 !important;display:flex;align-items:center;justify-content:center}
+@media(max-width:430px){.btn{width:auto}}
 :root{--bg:#080c17;--card:#11182a;--card2:#172038;--text:#f4f7ff;--muted:#9aa6bf;--line:#26314b;--accent:#7c8cff;--green:#39d98a;--red:#ff647c;--shadow:0 12px 35px #0007}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
